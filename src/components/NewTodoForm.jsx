@@ -6,9 +6,9 @@ export function NewTodoForm({onSubmit}){
 const [newItem, setNewItem] = useState("")
 
 function handleSubmit(e){
-    e.preventDefault()
+    e.preventDefault() 
     if(newItem === "") return 
-    
+
     onSubmit(newItem)
 
     setNewItem("")
